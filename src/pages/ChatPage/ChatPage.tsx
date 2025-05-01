@@ -1,31 +1,7 @@
-import { Grid, useTheme } from '@mui/material';
-import React from 'react';
-import { Sidebar } from '../../components/Sidebar';
-import { ChatContent } from '../../components/ChatContent/ChatContent';
-
-export const ChatPage: React.FC = () => {
-  const theme = useTheme();
-
+export default function ChatPage() {
   return (
-    <Grid
-      container
-      sx={{
-        backgroundColor: theme.palette.blue.main,
-      }}
-    >
-      <Grid item>
-        <Sidebar />
-      </Grid>
-
-      <Grid
-        item
-        sx={{
-          flex: 1,
-          overflowX: 'auto',
-        }}
-      >
-        <ChatContent />
-      </Grid>
-    </Grid>
+    <div style={{ backgroundColor: "#111", color: "#0f0", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "2rem" }}>
+      ✅ COACH AI loaded successfully!
+    </div>
   );
-};
+}
